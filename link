@@ -1,1 +1,12 @@
-https://drive.google.com/file/d/1Q1utKnq43qenKEbCd5dVFaIBam9Q1-_o/view?usp=sharing
+/usr/bin/ld: /tmp/ccQIAnd7.o: en la función `main':
+main.cpp:(.text+0x63): referencia a `segystack::SegyFile::SegyFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)' sin definir
+/usr/bin/ld: main.cpp:(.text+0x95): referencia a `segystack::SegyFile::open(std::_Ios_Openmode)' sin definir
+/usr/bin/ld: main.cpp:(.text+0xa4): referencia a `segystack::SegyFile::getTextHeader() const' sin definir
+/usr/bin/ld: main.cpp:(.text+0xce): referencia a `segystack::SegyFile::getBinaryHeader() const' sin definir
+/usr/bin/ld: main.cpp:(.text+0x111): referencia a `segystack::SegyFile::read(segystack::SegyFile::Trace&) const' sin definir
+/usr/bin/ld: main.cpp:(.text+0x13f): referencia a `operator<<(std::ostream&, segystack::SegyFile::TextHeader const&)' sin definir
+/usr/bin/ld: main.cpp:(.text+0x183): referencia a `segystack::SegyFile::BinaryHeader::print(std::ostream&) const' sin definir
+/usr/bin/ld: main.cpp:(.text+0x1eb): referencia a `segystack::SegyFile::Trace::Header::print(std::ostream&) const' sin definir
+/usr/bin/ld: /tmp/ccQIAnd7.o: en la función `std::default_delete<segystack::MmapFile>::operator()(segystack::MmapFile*) const':
+main.cpp:(.text._ZNKSt14default_deleteIN9segystack8MmapFileEEclEPS1_[_ZNKSt14default_deleteIN9segystack8MmapFileEEclEPS1_]+0x22): referencia a `segystack::MmapFile::~MmapFile()' sin definir
+collect2: error: ld returned 1 exit status
